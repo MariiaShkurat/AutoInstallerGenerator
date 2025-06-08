@@ -1,0 +1,7 @@
+{
+    "ProjectName": "ApplicationName",
+    "OutputInstallerPath": "OutputPath", //Must be rewritten
+    "Localization": "uk-ua",
+    "RequiresSerialCode": false,
+    "CreateShortcut": true
+}

@@ -1,0 +1,34 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Target Name="CopyInstallerConfigIfMissing" BeforeTargets="PrepareProjectReferences">
+		<PropertyGroup>
+			<InstallerConfigPath>$(ProjectDir)installer.settings.json</InstallerConfigPath>
+		</PropertyGroup>
+
+		<Message Text="Checking if installer.settings.json exists..." Importance="low" />
+
+		<Copy
+		  SourceFiles="$(MSBuildThisFileDirectory)installer.settings.json"
+		  DestinationFiles="$(InstallerConfigPath)"
+		  Condition="!Exists('$(InstallerConfigPath)')" />
+	</Target>
+	
+	<Target Name="RunSmartInstaller" AfterTargets="Publish">
+		<Message Text="SmartInstaller from NuGet is running!" Importance="high" />
+
+		<ItemGroup>
+			<WiXResourcesFiles Include="$(MSBuildThisFileDirectory)..\contentFiles\any\net6.0\WiXResources\**\*.*" />
+		</ItemGroup>
+
+		<!--<Copy SourceFiles="@(WiXResourcesFiles)" DestinationFolder="$(OutDir)WiXResources\%(RecursiveDir)" SkipUnchangedFiles="true" />-->
+
+		<Copy SourceFiles="@(WiXResourcesFiles)"
+			  DestinationFolder="$(PublishDir)WiXResources\%(RecursiveDir)"
+			  SkipUnchangedFiles="true" />
+
+		<Exec Command="dotnet &quot;$(MSBuildThisFileDirectory)..\lib\net6.0-windows7.0\AutoInstallerGenerator.dll&quot; --config &quot;$(ProjectDir)installer.settings.json&quot;"
+			  IgnoreExitCode="false"
+			  StandardOutputImportance="high"
+			  StandardErrorImportance="high" />
+
+	</Target>
+</Project>

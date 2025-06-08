@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<OutputType>Exe</OutputType>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageId>AutoInstallerGenerator</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Mariia</Authors>
+		<Description>Автоматичний генератор інсталяторів після білду</Description>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="AutoInstallerGenerator.targets">
+			<Pack>true</Pack>
+			<PackagePath>buildTransitive\AutoInstallerGenerator.targets</PackagePath>
+		</Content>
+
+		<Content Include="installer.settings.json">
+			<Pack>true</Pack>
+			<PackagePath>buildTransitive\installer.settings.json</PackagePath>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="WiXResources\**">
+			<Pack>true</Pack>
+			<PackagePath>contentFiles\any\net6.0\WiXResources</PackagePath>
+			<CopyToOutput>true</CopyToOutput>
+			<Flatten>true</Flatten>
+		</Content>
+	</ItemGroup>
+
+</Project>

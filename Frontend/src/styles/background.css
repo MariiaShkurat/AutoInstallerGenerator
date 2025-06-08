@@ -1,0 +1,51 @@
+/* заповнюємо повністю вікно */
+body, #app {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: #24252C;            /* темний базовий фон */
+    font-family: system-ui, sans-serif;
+  }
+  
+  /* напівпрозорий “туман” над фоном */
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(80px);    /* головне “розмиття” */
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  /* контейнер із бульками (під контентом) */
+  .bubbles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .bubble{
+    position:absolute;
+    border-radius:50%;
+    opacity:var(--o);
+    background:radial-gradient(circle at 30% 30%,
+        rgba(var(--c),.95) 0%,
+        rgba(var(--c),.5) 40%,
+        rgba(var(--c),0) 75%);
+    box-shadow:0 0 calc(var(--size)*.25) rgba(var(--c),.6);
+  
+    width:var(--size); height:var(--size);
+  
+    /* NEW: рух завжди туди-сюди */
+    animation: drift var(--t) ease-in-out infinite alternate;
+  }
+  
+  /* рух від старту до старт+Δ, потім назад */
+  @keyframes drift{
+    0%   { transform:translate(var(--x),var(--y)); }
+    100% { transform:translate(calc(var(--x) + var(--dx)),
+                                calc(var(--y) + var(--dy))); }
+  }
+  

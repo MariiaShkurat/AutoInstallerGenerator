@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+	<String Id="DesktopShortcut">Create desktop shortcut</String>
+	<String Id="SerialCode.Header">Please, provide valid serial code</String>
+	<String Id="SerialCode">Serial code</String>
+	<String Id="SerialCodeInputLabel">Enter Serial Code:</String>
+</WixLocalization>

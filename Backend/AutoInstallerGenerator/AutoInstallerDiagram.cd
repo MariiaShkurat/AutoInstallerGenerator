@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AutoInstallerGenerator.Builders.InstallerBuilder" BaseTypeListCollapsed="true">
+    <Position X="15" Y="5.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAIgAAAAAAAAAAAACAAAAGAAAAAAAAA=</HashCode>
+      <FileName>Builders\InstallerBuilder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AutoInstallerGenerator.Builders.InstallerDirector">
+    <Position X="12" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Builders\InstallerDirector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoInstallerGenerator.FilesTree.FileNode">
+    <Position X="22.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAABAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FilesTree\FileNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoInstallerGenerator.InstallerConfiguration.Installer">
+    <Position X="20.75" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAIgAAAAAAQAABgAAAAAAAAAgAAAAIA=</HashCode>
+      <FileName>Installer\Installer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoInstallerGenerator.InstallerLocalization.UkrainianLocalization" BaseTypeListCollapsed="true">
+    <Position X="22.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>InstallerLocalization\Localization.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AutoInstallerGenerator.InstallerLocalization.EnglishLocalization" BaseTypeListCollapsed="true">
+    <Position X="20.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>InstallerLocalization\Localization.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AutoInstallerGenerator.InstallerLocalization.LocalizationFactory">
+    <Position X="20.75" Y="9" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>InstallerLocalization\LocalizationFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstallerAutoRunner">
+    <Position X="25.75" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InstallerAutoRunner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoInstallerGenerator.InstallerSettings">
+    <Position X="26.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAAAAAAAAAQAgCAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>InstallerSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoInstallerGenerator.Program">
+    <Position X="26.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="AutoInstallerGenerator.Builders.IBuilder">
+    <Position X="13.5" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAgAAAAAAAAAAAACAAAAGAAAAAAAAA=</HashCode>
+      <FileName>Builders\InstallerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AutoInstallerGenerator.InstallerLocalization.ILocalization">
+    <Position X="19" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>InstallerLocalization\Localization.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

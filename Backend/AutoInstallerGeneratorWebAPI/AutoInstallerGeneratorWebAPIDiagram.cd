@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AutoInstallerGeneratorWebAPI.Controllers.InstallersController">
+    <Position X="17" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAgEAAAAAAAA=</HashCode>
+      <FileName>Controllers\InstallersController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoInstallerGeneratorWebAPI.DTO.InstallerDocumentDTO">
+    <Position X="13" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAQgEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DTO\InstallerDocumentDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoInstallerGeneratorWebAPI.Infrastructure.InstallerRepository">
+    <Position X="17" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAIACAAAAAAIAAAAAAAAAAIAAAAAg=</HashCode>
+      <FileName>Infrastructure\InstallerRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoInstallerGeneratorWebAPI.Infrastructure.MongoSettings">
+    <Position X="19.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\MongoSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoInstallerGeneratorWebAPI.Models.InstallerDocument">
+    <Position X="13.5" Y="3" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAACAAAAAAAAQgAAAAAACAAAAJAAAA=</HashCode>
+      <FileName>Models\InstallerDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
